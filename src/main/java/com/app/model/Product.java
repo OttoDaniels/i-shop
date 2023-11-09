@@ -9,7 +9,7 @@ public class Product {
     private BigDecimal productPrice;
     private String productType;
     private int countInStock;
-    private boolean hasDiscount;
+    private int discount;
 
 
     public long getId() {
@@ -60,11 +60,11 @@ public class Product {
         this.countInStock = countInStock;
     }
 
-    public boolean isHasDiscount() {
-        return hasDiscount;
+    public int getDiscount() {
+        return discount;
     }
 
-    public void setHasDiscount(boolean hasDiscount) {
-        this.hasDiscount = hasDiscount;
+    public void setDiscount(int discount) {
+        this.discount = discount;
     }
 }
