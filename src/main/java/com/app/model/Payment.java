@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Payment {
     private long id;
     private String paymentType;
-    private BigDecimal totalPrice;
+
 
     public long getId() {
         return id;
@@ -23,11 +23,4 @@ public class Payment {
         this.paymentType = paymentType;
     }
 
-    public BigDecimal getTotalPrice() {
-        return totalPrice;
-    }
-
-    public void setTotalPrice(BigDecimal totalPrice) {
-        this.totalPrice = totalPrice;
-    }
 }

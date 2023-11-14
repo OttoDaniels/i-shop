@@ -6,6 +6,7 @@ public class Customer {
     private String lastName;
     private String email;
     private String phoneNumber;
+    private String password;
 
 
     public long getId() {
@@ -48,4 +49,11 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

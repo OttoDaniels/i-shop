@@ -10,6 +10,8 @@ public class Product {
     private String productType;
     private int countInStock;
     private int discount;
+    private String color;
+    private int timesBought;
 
 
     public long getId() {
@@ -66,5 +68,21 @@ public class Product {
 
     public void setDiscount(int discount) {
         this.discount = discount;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getTimesBought() {
+        return timesBought;
+    }
+
+    public void setTimesBought(int timesBought) {
+        this.timesBought = timesBought;
     }
 }

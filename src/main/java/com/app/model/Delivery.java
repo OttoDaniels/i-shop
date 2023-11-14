@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Delivery {
     private long id;
     private BigDecimal deliveryPrice;
-    private boolean isExpress;
+    private String deliveryType;
     private String deliveryTime;
 
     public long getId() {
@@ -24,19 +24,19 @@ public class Delivery {
         this.deliveryPrice = deliveryPrice;
     }
 
-    public boolean isExpress() {
-        return isExpress;
-    }
-
-    public void setExpress(boolean express) {
-        isExpress = express;
-    }
-
     public String getDeliveryTime() {
         return deliveryTime;
     }
 
     public void setDeliveryTime(String deliveryTime) {
         this.deliveryTime = deliveryTime;
+    }
+
+    public String getDeliveryType() {
+        return deliveryType;
+    }
+
+    public void setDeliveryType(String deliveryType) {
+        this.deliveryType = deliveryType;
     }
 }
