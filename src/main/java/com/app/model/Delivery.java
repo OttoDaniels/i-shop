@@ -7,6 +7,7 @@ public class Delivery {
     private BigDecimal deliveryPrice;
     private String deliveryType;
     private String deliveryTime;
+    private boolean isFree;
 
     public long getId() {
         return id;
@@ -38,5 +39,13 @@ public class Delivery {
 
     public void setDeliveryType(String deliveryType) {
         this.deliveryType = deliveryType;
+    }
+
+    public boolean isFree() {
+        return isFree;
+    }
+
+    public void setFree(boolean free) {
+        isFree = free;
     }
 }

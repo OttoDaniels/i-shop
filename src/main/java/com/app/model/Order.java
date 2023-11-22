@@ -9,8 +9,9 @@ public class Order {
     private long customerId;
     private long deliveryTypeId;
     private String orderTimestamp;
-    private String orderStatus;
-    private BigDecimal cartTotalPrice;
+    private String status;
+    private BigDecimal totalPrice;
+    private long shoppingCartId;
 
     public long getId() {
         return id;
@@ -60,19 +61,27 @@ public class Order {
         this.orderTimestamp = orderTimestamp;
     }
 
-    public String getOrderStatus() {
-        return orderStatus;
+    public String getStatus() {
+        return status;
     }
 
-    public void setOrderStatus(String orderStatus) {
-        this.orderStatus = orderStatus;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public BigDecimal getCartTotalPrice() {
-        return cartTotalPrice;
+    public BigDecimal getTotalPrice() {
+        return totalPrice;
     }
 
-    public void setCartTotalPrice(BigDecimal cartTotalPrice) {
-        this.cartTotalPrice = cartTotalPrice;
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public long getShoppingCartId() {
+        return shoppingCartId;
+    }
+
+    public void setShoppingCartId(long shoppingCartId) {
+        this.shoppingCartId = shoppingCartId;
     }
 }

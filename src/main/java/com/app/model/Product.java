@@ -5,14 +5,10 @@ import java.math.BigDecimal;
 public class Product {
     private long id;
     private String productLabel;
-    private String productDescription;
-    private BigDecimal productPrice;
-    private String productType;
-    private int countInStock;
-    private int discount;
+    private int productPriceId;
+    private long productTypeId;
+    private int discountId;
     private String color;
-    private int timesBought;
-
 
     public long getId() {
         return id;
@@ -30,44 +26,28 @@ public class Product {
         this.productLabel = productLabel;
     }
 
-    public String getProductDescription() {
-        return productDescription;
+    public int getProductPriceId() {
+        return productPriceId;
     }
 
-    public void setProductDescription(String productDescription) {
-        this.productDescription = productDescription;
+    public void setProductPriceId(int productPriceId) {
+        this.productPriceId = productPriceId;
     }
 
-    public BigDecimal getProductPrice() {
-        return productPrice;
+    public long getProductTypeId() {
+        return productTypeId;
     }
 
-    public void setProductPrice(BigDecimal productPrice) {
-        this.productPrice = productPrice;
+    public void setProductTypeId(long productTypeId) {
+        this.productTypeId = productTypeId;
     }
 
-    public String getProductType() {
-        return productType;
+    public int getDiscountId() {
+        return discountId;
     }
 
-    public void setProductType(String productType) {
-        this.productType = productType;
-    }
-
-    public int getCountInStock() {
-        return countInStock;
-    }
-
-    public void setCountInStock(int countInStock) {
-        this.countInStock = countInStock;
-    }
-
-    public int getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(int discount) {
-        this.discount = discount;
+    public void setDiscountId(int discountId) {
+        this.discountId = discountId;
     }
 
     public String getColor() {
@@ -76,13 +56,5 @@ public class Product {
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public int getTimesBought() {
-        return timesBought;
-    }
-
-    public void setTimesBought(int timesBought) {
-        this.timesBought = timesBought;
     }
 }
