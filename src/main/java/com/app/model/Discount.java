@@ -1,6 +1,6 @@
 package com.app.model;
 
-public class Discounts {
+public class Discount {
     private long id;
     private int percent;
 
