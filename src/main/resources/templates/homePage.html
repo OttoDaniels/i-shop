@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>iShop title!</title>
+    <title>Anti Shop!</title>
+    <link th:href="@{/css/reset.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css">
+
 </head>
-<body>
-<div>Hello,World!</div>
-</body>
+<div class="home-page-header">Welcome to the worst i-shop :)</div>
+    <body>
+        <div th:each="productType : ${productTypes}">
+            <div th:text="${productType.productType}"></div>
+        </div>
+        <div><a href="/new-product-type">Add product type</a> </div>
+        <div><a href="/new-product">Add product</a> </div>
+    </body>
 </html>

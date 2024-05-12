@@ -27,12 +27,18 @@ public class CustomerDAO {
         return jdbcTemplate.query("SELECT * FROM customers", rowMapper);
     }
 
+    public List<Customer> getCustomerByEmail(String email) {
+        RowMapper<Customer> rowMapper = (rs, rowNumber) -> mapCustomer(rs);
+        return jdbcTemplate.query("SELECT * FROM customers WHERE email = ?", rowMapper, email);
+    }
+
     private Customer mapCustomer(ResultSet rs) throws SQLException {
         Customer customer = new Customer();
 
         customer.setId(rs.getLong("id"));
         customer.setFirstName(rs.getString("first_name"));
         customer.setLastName(rs.getString("last_name"));
+        customer.setPassword(rs.getString("password"));
         customer.setEmail(rs.getString("email"));
         customer.setPhoneNumber(rs.getString("phone_number"));
 

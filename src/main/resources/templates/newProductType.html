@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New Product Type</title>
+    <link th:href="@{/css/reset.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="new-product-type">
+        <form th:action="@{/new-product-type}" method="POST" th:object="${newProductType}">
+            <div><input type="text" placeholder="Product type" th:field="*{productType}" class="text-input"></div>
+            <div><input type="text" placeholder="Stock" th:field="*{countInStock}" class="text-input"></div>
+            <div><input type="submit" value="Add" class="button"></div>
+        </form>
+    </div>
+</body>
+</html>

@@ -3,10 +3,11 @@ package com.app.model;
 public class ProductType {
     private long id;
     private String productType;
-    private String productBrand;
-    private String productDescription;
     private long countInStock;
-    private int timesBought;
+
+    public ProductType(long id, String product_type, String count_in_stock) {
+    }
+    public ProductType(){};
 
     public long getId() {
         return id;
@@ -32,27 +33,4 @@ public class ProductType {
         this.countInStock = count;
     }
 
-    public String getProductBrand() {
-        return productBrand;
-    }
-
-    public void setProductBrand(String productBrand) {
-        this.productBrand = productBrand;
-    }
-
-    public String getProductDescription() {
-        return productDescription;
-    }
-
-    public void setProductDescription(String productDescription) {
-        this.productDescription = productDescription;
-    }
-
-    public int getTimesBought() {
-        return timesBought;
-    }
-
-    public void setTimesBought(int timesBought) {
-        this.timesBought = timesBought;
-    }
 }

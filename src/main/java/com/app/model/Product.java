@@ -9,6 +9,12 @@ public class Product {
     private long productTypeId;
     private int discountId;
     private String color;
+    private String productDescription;
+
+    public Product(long id, String productLabel, String color, String productDescription) {
+    }
+    public Product(){};
+
 
     public long getId() {
         return id;
@@ -56,5 +62,13 @@ public class Product {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getProductDescription() {
+        return productDescription;
+    }
+
+    public void setProductDescription(String productDescription) {
+        this.productDescription = productDescription;
     }
 }
