@@ -27,7 +27,7 @@ public class ProductTypeDAO {
         return new ProductType(
                 rs.getLong("id"),
                 rs.getString("product_type"),
-                rs.getString("count_in_stock")
+                rs.getLong("count_in_stock")
         );
     }
 }

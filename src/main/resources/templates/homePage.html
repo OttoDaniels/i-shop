@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Anti Shop!</title>
@@ -9,8 +9,8 @@
 </head>
 <div class="home-page-header">Welcome to the worst i-shop :)</div>
     <body>
-        <div th:each="productType : ${productTypes}">
-            <div th:text="${productType.productType}"></div>
+        <div th:each="pt : ${productTypes}" class="mainProducts">
+            <div th:text="${pt.productType}" class="type"></div>
         </div>
         <div><a href="/new-product-type">Add product type</a> </div>
         <div><a href="/new-product">Add product</a> </div>

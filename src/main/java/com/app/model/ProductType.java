@@ -5,7 +5,10 @@ public class ProductType {
     private String productType;
     private long countInStock;
 
-    public ProductType(long id, String product_type, String count_in_stock) {
+    public ProductType(long id, String product_type, long count_in_stock) {
+        this.id = id;
+        this.productType = product_type;
+        this.countInStock = count_in_stock;
     }
     public ProductType(){};
 
